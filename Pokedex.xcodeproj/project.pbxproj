@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		21EA755A20BC48A7007ABDE0 /* pokemon.csv in Resources */ = {isa = PBXBuildFile; fileRef = 21EA755920BC48A6007ABDE0 /* pokemon.csv */; };
 		21EE225720BB634000E80844 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21EE225620BB634000E80844 /* AppDelegate.swift */; };
 		21EE225920BB634000E80844 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21EE225820BB634000E80844 /* ViewController.swift */; };
 		21EE225C20BB634000E80844 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21EE225A20BB634000E80844 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		21EA755920BC48A6007ABDE0 /* pokemon.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pokemon.csv; sourceTree = "<group>"; };
 		21EE225320BB634000E80844 /* Pokedex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pokedex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21EE225620BB634000E80844 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		21EE225820BB634000E80844 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 				21EE225820BB634000E80844 /* ViewController.swift */,
 				21EE225A20BB634000E80844 /* Main.storyboard */,
 				21EE225D20BB634100E80844 /* Assets.xcassets */,
+				21EA755920BC48A6007ABDE0 /* pokemon.csv */,
 				21EE225F20BB634100E80844 /* LaunchScreen.storyboard */,
 				21EE226220BB634100E80844 /* Info.plist */,
 			);
@@ -124,6 +127,7 @@
 			files = (
 				21EE226120BB634100E80844 /* LaunchScreen.storyboard in Resources */,
 				21EE225E20BB634100E80844 /* Assets.xcassets in Resources */,
+				21EA755A20BC48A7007ABDE0 /* pokemon.csv in Resources */,
 				21EE225C20BB634000E80844 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
