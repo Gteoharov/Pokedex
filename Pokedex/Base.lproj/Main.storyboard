@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -154,21 +154,50 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="klz-BK-B1U">
-                                <rect key="frame" x="104" y="376" width="166" height="60"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vak-EL-wfF">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="klz-BK-B1U">
+                                        <rect key="frame" x="104.66666666666669" y="5" width="166" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="166" id="JTH-lh-rf1"/>
+                                            <constraint firstAttribute="height" constant="60" id="XLp-uc-qPB"/>
+                                        </constraints>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Ivysaur">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.99194461107254028" green="0.99615627527236938" blue="0.99600595235824585" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" metaFont="system" size="18"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="2.5" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="csg-4p-boE">
+                                        <rect key="frame" x="8" y="32" width="36" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="DOK-xN-f32"/>
+                                            <constraint firstAttribute="width" constant="36" id="GNp-Cj-L2c"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="back"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="166" id="JTH-lh-rf1"/>
-                                    <constraint firstAttribute="height" constant="60" id="XLp-uc-qPB"/>
+                                    <constraint firstAttribute="height" constant="65" id="3nA-y7-BDt"/>
+                                    <constraint firstAttribute="bottom" secondItem="csg-4p-boE" secondAttribute="bottom" constant="8" id="WP0-UX-UCS"/>
+                                    <constraint firstItem="klz-BK-B1U" firstAttribute="centerY" secondItem="Vak-EL-wfF" secondAttribute="centerY" constant="2.5" id="eWh-hS-MMy"/>
+                                    <constraint firstItem="klz-BK-B1U" firstAttribute="centerX" secondItem="Vak-EL-wfF" secondAttribute="centerX" id="qxZ-n1-CQM"/>
+                                    <constraint firstItem="csg-4p-boE" firstAttribute="leading" secondItem="Vak-EL-wfF" secondAttribute="leading" constant="8" id="yZA-1O-kq1"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="klz-BK-B1U" firstAttribute="centerY" secondItem="sJ7-N9-hZM" secondAttribute="centerY" id="M1y-uH-J8D"/>
-                            <constraint firstItem="klz-BK-B1U" firstAttribute="centerX" secondItem="sJ7-N9-hZM" secondAttribute="centerX" id="fJw-eX-eKM"/>
+                            <constraint firstItem="Vak-EL-wfF" firstAttribute="top" secondItem="sJ7-N9-hZM" secondAttribute="top" id="0Oy-T7-a7I"/>
+                            <constraint firstItem="Vak-EL-wfF" firstAttribute="trailing" secondItem="mSe-17-hjX" secondAttribute="trailing" id="rPF-mA-2dy"/>
+                            <constraint firstItem="Vak-EL-wfF" firstAttribute="leading" secondItem="mSe-17-hjX" secondAttribute="leading" id="siA-cS-Rdc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="mSe-17-hjX"/>
                     </view>
@@ -183,6 +212,7 @@
     </scenes>
     <resources>
         <image name="4" width="120" height="120"/>
+        <image name="back" width="100" height="67"/>
         <image name="bg" width="800" height="480"/>
         <image name="music" width="100" height="100"/>
     </resources>
