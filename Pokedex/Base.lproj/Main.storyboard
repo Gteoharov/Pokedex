@@ -192,10 +192,20 @@
                                     <constraint firstItem="csg-4p-boE" firstAttribute="leading" secondItem="Vak-EL-wfF" secondAttribute="leading" constant="8" id="yZA-1O-kq1"/>
                                 </constraints>
                             </view>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="eQo-Bj-u8Z">
+                                <rect key="frame" x="8" y="73" width="359" height="29"/>
+                                <segments>
+                                    <segment title="Bio"/>
+                                    <segment title="Moves"/>
+                                </segments>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Vak-EL-wfF" firstAttribute="top" secondItem="sJ7-N9-hZM" secondAttribute="top" id="0Oy-T7-a7I"/>
+                            <constraint firstItem="eQo-Bj-u8Z" firstAttribute="top" secondItem="Vak-EL-wfF" secondAttribute="bottom" constant="8" id="3xy-gf-wHT"/>
+                            <constraint firstItem="mSe-17-hjX" firstAttribute="trailing" secondItem="eQo-Bj-u8Z" secondAttribute="trailing" constant="8" id="Dg9-je-og8"/>
+                            <constraint firstItem="eQo-Bj-u8Z" firstAttribute="leading" secondItem="mSe-17-hjX" secondAttribute="leading" constant="8" id="juO-p9-Yvm"/>
                             <constraint firstItem="Vak-EL-wfF" firstAttribute="trailing" secondItem="mSe-17-hjX" secondAttribute="trailing" id="rPF-mA-2dy"/>
                             <constraint firstItem="Vak-EL-wfF" firstAttribute="leading" secondItem="mSe-17-hjX" secondAttribute="leading" id="siA-cS-Rdc"/>
                         </constraints>
