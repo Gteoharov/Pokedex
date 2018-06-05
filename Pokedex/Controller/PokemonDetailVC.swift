@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class PokemonDetailVC: UIViewController {
 
     var pokemon: Pokemon!
@@ -29,6 +30,15 @@ class PokemonDetailVC: UIViewController {
         super.viewDidLoad()
         
         pokemonLbl.text = pokemon.name
+        
+        pokemon.downloadPokemonDetail {
+            // Whatever we write here will only be called after the network call is complete!
+            self.updateUI()
+        }
+    }
+    
+    func updateUI() {
+        
     }
     
     @IBAction func backButtonPressed(_ sender: UIButton) {
