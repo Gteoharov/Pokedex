@@ -29,8 +29,6 @@ class PokemonDetailVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        pokemonLbl.text = pokemon.name.capitalized
-        
         let img = UIImage(named: "\(pokemon.pokedexId)")
         mainImg.image = img
         pokedexIdLbl.text = "\(pokemon.pokedexId)"
@@ -46,10 +44,13 @@ class PokemonDetailVC: UIViewController {
     }
     
     func updateUI() {
-        pokemonLbl.text = pokemon.name
+        pokemonLbl.text = pokemon.name.capitalized
         heightLbl.text = pokemon.height
         weightLbl.text = pokemon.weight
         typeLbl.text = pokemon.type
+        defenseLbl.text = pokemon.defense
+        basicAttackLbl.text = pokemon.attack
+        descriptionLbl.text = pokemon.description
     }
     
     @IBAction func backButtonPressed(_ sender: UIButton) {

@@ -21,6 +21,7 @@ class Pokemon {
     private var _defense: String!
     private var _nextEvolutionText: String!
     private var _pokemonURL: String!
+    private var _descriptionURL: String!
     
     var description: String {
         if _description == nil {
@@ -88,6 +89,7 @@ class Pokemon {
         self._pokedexId = pokedexId
         
         self._pokemonURL = "\(URL_BASE)\(URL_POKEMON)\(self.pokedexId)/"
+        self._descriptionURL = "\(URL_DESCRIPTION)\(self.pokedexId)/"
     }
     
     func downloadPokemonDetail(completed: @escaping DownloadComplete) {
@@ -132,9 +134,36 @@ class Pokemon {
                     self._type = ""
                 }
                 
+                if let stats = dict["stats"] as? [Dictionary<String, AnyObject>], stats.count > 0 {
+                    
+                    if let defense = stats[3]["base_stat"] as? Int {
+                        self._defense = "\(defense)"
+                    }
+                    
+                    if let attack = stats[4]["base_stat"] as? Int {
+                        self._attack = "\(attack)"
+                    }
+                } else {
+                    self._defense = ""
+                }
+                
+                
+ 
             }
 
           completed()
+        }
+        Alamofire.request(_descriptionURL).responseJSON { (responce) in
+            
+            if let dict = responce.result.value as? Dictionary<String, AnyObject> {
+                
+                if let description = dict["description"] as? String {
+                    
+                    let newDescritpion = description.replacingOccurrences(of: "POKMON", with: "Pokemon")
+                    self._description = newDescritpion
+                }
+            }
+            completed()
         }
     }
 }
