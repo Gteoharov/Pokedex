@@ -111,6 +111,15 @@ class Pokemon {
                     self._height = "\(height)"
                 }
                 
+                if let types = dict["types"] as? [Dictionary<String, AnyObject>], types.count > 0 {
+                    if let type = types[0]["type"] as? Dictionary<String, AnyObject> {
+                        if let name = type["name"] {
+                            self._type! += "/\(name)"
+                        }
+                    }
+                } else {
+                    self._type = ""
+                }
                 
             }
 
