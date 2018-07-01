@@ -43,6 +43,12 @@ class PokemonDetailVC: UIViewController {
         }
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+            self.mainImg.layer.cornerRadius = self.mainImg.frame.width / 2
+            self.mainImg.backgroundColor = UIColor(red: 0.5, green: 0.5, blue: 0.5, alpha: 1.0)  
+    }
+    
     func updateUI() {
         pokemonLbl.text = pokemon.name.capitalized
         heightLbl.text = pokemon.height

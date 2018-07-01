@@ -24,10 +24,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oNa-ih-hd7">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="85"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pokedex" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5G1-Gp-HlF">
-                                        <rect key="frame" x="124.66666666666669" y="22" width="126" height="35"/>
+                                        <rect key="frame" x="124.66666666666669" y="42" width="126" height="35"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="126" id="M83-0g-YbY"/>
                                             <constraint firstAttribute="height" constant="35" id="NS3-06-smb"/>
@@ -37,7 +37,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fay-yB-j4h">
-                                        <rect key="frame" x="332" y="22" width="35" height="35"/>
+                                        <rect key="frame" x="332" y="42" width="35" height="35"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="35" id="7up-eJ-vUp"/>
                                             <constraint firstAttribute="width" constant="35" id="m5e-YU-rki"/>
@@ -52,23 +52,23 @@
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="fay-yB-j4h" secondAttribute="bottom" constant="8" id="6SL-hB-AZZ"/>
                                     <constraint firstAttribute="trailing" secondItem="fay-yB-j4h" secondAttribute="trailing" constant="8" id="Gzt-Z9-BUe"/>
-                                    <constraint firstAttribute="height" constant="65" id="SQ8-h8-j4a"/>
+                                    <constraint firstAttribute="height" constant="85" id="SQ8-h8-j4a"/>
                                     <constraint firstItem="5G1-Gp-HlF" firstAttribute="centerX" secondItem="oNa-ih-hd7" secondAttribute="centerX" id="Yjo-XF-yAd"/>
                                     <constraint firstAttribute="bottom" secondItem="5G1-Gp-HlF" secondAttribute="bottom" constant="8" id="uP7-dJ-eQS"/>
                                 </constraints>
                             </view>
                             <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="Search for pokemons" translatesAutoresizingMaskIntoConstraints="NO" id="Y0Y-li-DxH">
-                                <rect key="frame" x="0.0" y="65" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="85" width="375" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="n0d-Jk-RPs"/>
                                 </constraints>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="IIs-5O-LwY">
-                                <rect key="frame" x="0.0" y="109" width="375" height="669"/>
+                                <rect key="frame" x="0.0" y="129" width="375" height="649"/>
                             </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="6cu-4a-Kjh">
-                                <rect key="frame" x="20" y="129" width="335" height="629"/>
+                                <rect key="frame" x="20" y="149" width="335" height="609"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="xY2-Vq-skW">
                                     <size key="itemSize" width="105" height="105"/>
